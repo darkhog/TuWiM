@@ -29,9 +29,7 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=622;C;0;EUTF-8;1;1;0;%2Fhome%2FJAGIELSKI%2FDokumenty%2FGitHub%2FTuWiM%2Fmain.c;0;4
-FILE_NAME_1=526;Markdown;0;EUTF-8;1;1;0;%2Fhome%2FJAGIELSKI%2FDokumenty%2FGitHub%2FTuWiM%2FREADME.md;0;4
-FILE_NAME_2=23;None;0;EUTF-8;1;1;0;%2Fhome%2FJAGIELSKI%2FDokumenty%2FGitHub%2FTuWiM%2F.gitignore;0;4
+FILE_NAME_0=886;C;0;EUTF-8;1;1;0;%2Fhome%2FJAGIELSKI%2FDokumenty%2FGitHub%2FTuWiM%2Fmain.c;0;4
 
 [build-menu]
 CFT_01_LB=_Build

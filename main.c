@@ -10,6 +10,25 @@
 #include <dirent.h>
 
 int main(int argc, char* argv[]){
+	if (argc>1) {
+		if (strcmp(argv[1],"dragons")==0){
+			printf("Dragons are very cool!\n");
+			printf("Here comes big boy!!!!\n\n");
+			printf("  |\\           /|          \n");
+			printf("  | \\         / |          \n");
+			printf("  |  \\__   __/  |          \n");
+			printf("  (             )          \n");
+			printf("   \\  .--..--. /           \n");
+			printf("    |          |      __   \n");
+			printf("    \\          /     /  \\  \n");
+			printf("     | (    ) |     /    | \n");
+			printf("\\     \\VVVVVV/     /     | \n");
+			printf(" \\    / (__) \\    /      | \n");
+			printf("  \\  | (____) |  /      /  \n");
+			printf("   \\/ (______) \\/      |   \n");
+			return 0;
+		}
+	}
 	Display *dspl = NULL;
 	printf("Opening X Display...\n");
 	dspl = XOpenDisplay(NULL);
