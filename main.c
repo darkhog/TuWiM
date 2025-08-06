@@ -29,17 +29,27 @@ int main(int argc, char* argv[]){
 			return 0;
 		}
 	}
+
 	Display *dspl = NULL;
 	printf("Opening X Display...\n");
 	dspl = XOpenDisplay(NULL);
+
 	if (dspl == NULL) {
 		printf("Error: No valid X display provided. Are you trying to run this on Wayland? You poor silly goose...\n");
 		return NULLDISPLAYERR;
 	} else {
 		printf("Successfully opened X Display.\n");
 	}
+	/*
+	 +--------------------------------------+
+	 | TuWiM is scanning desktop entries... |
+	 +--------------------------------------+
+	*/
+	Window *ldWnd = NULL; //Window shown during the desktop entry scanning process to let the user know that the program is doing something
+	Window *mainWnd = NULL; //main window of the launcher.
 	printf("Closing the X Display...\n");
 	XCloseDisplay(dspl);
+
 	printf("Display closed. Exiting gracefully.\n");
 	return 0;
 }

@@ -9,7 +9,7 @@
             "targets": [
                 {
                     "build_cmd": "gcc -Wall -o \"./tuwim\" \"../main.c\" -lX11",
-                    "name": "Ustawienia",
+                    "name": "Build",
                     "run_cmd": ""
                 },
                 {
