@@ -1,0 +1,23 @@
+{
+    "Auto_generated": "This file is auto-generated. Any extra tags or formatting will be lost",
+    "target_sets": [
+        {
+            "cmake_config": "",
+            "directory": "/home/JAGIELSKI/Dokumenty/GitHub/TuWiM/build",
+            "loaded_via_cmake": false,
+            "name": "Zestaw celów",
+            "targets": [
+                {
+                    "build_cmd": "gcc -Wall -o \"./tuwim\" \"../main.c\" -lX11",
+                    "name": "Ustawienia",
+                    "run_cmd": ""
+                },
+                {
+                    "build_cmd": "ninja",
+                    "name": "Polecenie budowania",
+                    "run_cmd": ""
+                }
+            ]
+        }
+    ]
+}
