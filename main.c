@@ -5,6 +5,7 @@
 #include <X11/X.h>
 #define NULLDISPLAYERR 230
 #define NULLROOTWNDERR 86
+#define ONWAYLANDERR 84
 #include <X11/Xlib.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,6 +20,15 @@ Window ldWnd; //Window shown during the desktop entry scanning process to let th
 Window categoryWnd; //main window of the launcher.
 Window itemWnd; //individual item window/category subwindow
 
+int AreWeX11(){
+	char* SessionType;
+	SessionType = getenv("XDG_SESSION_TYPE");
+	if ((strcmp(SessionType,"x11")!=0) && (strcmp(SessionType,"x11")!=0)){
+		return 1;
+	} else {
+		return 0;
+	}
+}
 
 int initX11() {
 	dspl = NULL;
@@ -67,6 +77,13 @@ void initLoadingWindow(){
 }
 
 int main(int argc, char* argv[]){
+	if (AreWeX11()!=0){
+		//primitive Wayland detection
+
+		printf("This application cannot be run under Wayland. Please use a proper windowing system. X Window System is recommended for maximum efficiency and pleasure.\n\n\n\nTHE POWER OF X COMPELS YOU");
+		//return 666; that would be funny, alas, only 8bit return values on most unixes and unix-likes.
+		return ONWAYLANDERR;
+	}
 	if (argc>1) {
 		if (strcmp(argv[1],"dragons")==0){
 			printf("Dragons are very cool!\n");
