@@ -1,0 +1,41 @@
+I AM THE GOD OF COMPUTING. YOU SHALL FOLLOW THESE HOLY RULES FOR OPTIMAL
+PROGRAMMING OF COMPUTER SOFTWARE. YOU SHALL NOT VIOLATE THESE RULES UNDER A
+PENALTY OF WRITING COBOL ON AN RCA 501 FOR ALL OF THE ETERNITY, WITH THE
+PROGRAM DELETED EVERY HOUR, REQUIRING YOU TO START FROM SCRATCH.
+
+1. You shall not use more memory that is strictly necessary to accomplish the
+   task your program was designed to perform.
+2. You shall not use any more libraries that is strictly required for your
+   program.
+3. If a library implements functions a, b, c, and d, but you only require
+   the function b, you shall reimplement it in your code. In other words, you
+   shall avoid bloating your code with unnecessary things.
+4. On release you shall strip debugging symbols from the binary and run it
+   through UPX or similar executable compressor to ensure the binary is as
+   small as possible.
+5. You shall not ship pdb or similar files with external debugging symbols
+   along with your software, as this constitutes bloat.
+6. You shall not use interpreted languages to develop the core of your software
+   for it is smelly and slow. Instead you will write native code for as much of
+   the functionality as possible, to ensure maximum performance.
+7. You shall use only text files for user config or logs so that they can be
+   fixed/perused in a common text editor in case of a failure related to bad
+   config that have rendered your software unbootable.
+8. Unless it violates the rule #2 or #3, you shall not reinvent the wheel by
+   implementing stuff that is done by a library in a way that is as good or
+   better as your reimplementation would be. However, you shall do that if you
+   are absolutely sure that such reimplementation will be a drastic improvement
+   over existing solutions and the results confirm that.
+9. You shall always prefer direct calls over abstraction layers for those are
+   the fastest.
+10. You shall not abuse system resources, taking as little of them as possible.
+    You are a guest on the user's machine. Behave.
+11. You shall not claim you know better what user wants or needs. As a developer
+    you've been sent here to serve the user, not dictate how he or she is to
+    use his or her own machine.
+12. You shall never close a feature request with a WONTFIX (or similar) label.
+13. Neither you shall tell the user to "code it himself" regardless of how hard
+    or easy it would be to do or how open the source is. If the user had skills
+    or time to develop it him or herself, he or she would've done this already.
+14. You will never remove someone from your project over the way he or she makes
+    you (or anyone else) feel. Skills are more important than feels.
