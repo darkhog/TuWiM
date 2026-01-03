@@ -23,7 +23,7 @@ Window itemWnd; //individual item window/category subwindow
 int AreWeX11(){
 	char* SessionType;
 	SessionType = getenv("XDG_SESSION_TYPE");
-	if ((strcmp(SessionType,"x11")!=0) && (strcmp(SessionType,"x11")!=0)){
+	if ((strcmp(SessionType,"x11")!=0) || (strcmp(SessionType,"X11")!=0)){
 		return 1;
 	} else {
 		return 0;
