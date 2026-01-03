@@ -20,6 +20,23 @@ Window ldWnd; //Window shown during the desktop entry scanning process to let th
 Window categoryWnd; //main window of the launcher.
 Window itemWnd; //individual item window/category subwindow
 
+typedef struct {
+	char *name;
+	char *description;
+	char *execpath;
+} LauncherEntry;
+
+LauncherEntry *launcherentries[];
+
+LauncherEntry ParseDesktopEntry(char* path) {
+	//stub
+	LauncherEntry le;
+	le.description = NULL;
+	le.name = NULL;
+	le.execpath = NULL;
+	return le;
+}
+
 int AreWeX11(){
 	char* SessionType;
 	SessionType = getenv("XDG_SESSION_TYPE");
